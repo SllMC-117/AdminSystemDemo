@@ -1,0 +1,165 @@
+<div class="card bg-light">
+    <div class="card-header bg-light pb-0">
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                <h6>Formulario</h6>
+                <p class="text-sm mb-0">
+                    <i class="fa fa-check text-info" aria-hidden="true"></i>
+                    <span class="font-weight-bold ms-1">Formulario</span> de banners
+                </p>
+            </div>
+            <!-- BTNS -->
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 my-auto text-end">
+                <a class="btn btn-outline-success btn-sm mb-0 me-3 btnExcelOperadores">
+                    Exportar Excel
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="card-body pb-5">
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                <form id="frmOperadorManiobra" action="frmOperadorManiobra" onsubmit="return false" enctype="multipart/form-data" autocomplete="off">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                            <label for="cmbEncargado" class="form-label">Encargado</label>
+                            <select id="cmbEncargado" name="cmbEncargado" class="form-select px-2" data-error="#failEncargado">
+                            </select>
+                            <p id="failEncargado"></p>
+
+                            <div id="contOtroEncargado">
+                                <label for="txtEncargado" class="form-label fw-bold">Escriba el nombre del encargado</label>
+                                <input class="form-control border px-2" id="txtEncargado" name="txtEncargado" type="text" data-error="#failTxtEncargado">
+                                <p id="failTxtEncargado"></p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                            <label for="cmbOperador" class="form-label">Operador</label>
+                            <select id="cmbOperador" name="cmbOperador" class="form-select px-2" data-error="#failOperador">
+                            </select>
+                            <p id="failOperador"></p>
+
+                            <div id="contOtroOperador">
+                                <label for="txtOperador" class="form-label fw-bold">Escriba el nombre del operador</label>
+                                <input class="form-control border px-2" id="txtOperador" name="txtOperador" type="text" data-error="#failTxtOperador">
+                                <p id="failTxtOperador"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                            <label for="cmbGrua" class="form-label">Grua</label>
+                            <select id="cmbGrua" name="cmbGrua" class="form-select px-2" data-error="#failGrua">
+                            </select>
+                            <p id="failGrua"></p>
+
+                            <div id="contOtraGrua">
+                                <label for="txtGrua" class="form-label fw-bold">Escriba el nombre de la grua</label>
+                                <input class="form-control border px-2" id="txtGrua" name="txtGrua" type="text" data-error="#failTxtGrua">
+                                <p id="failTxtGrua"></p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                            <label for="cmbMunicipio" class="form-label">Municipio</label>
+                            <select id="cmbMunicipio" name="cmbMunicipio" class="form-select px-2" data-error="#failMunicipio">
+                            </select>
+                            <p id="failMunicipio"></p>
+
+                            <div id="contOtroMunicipio">
+                                <label for="txtMunicipio" class="form-label fw-bold">Escriba el nombre del municipio</label>
+                                <input class="form-control border px-2" id="txtMunicipio" name="txtMunicipio" type="text" data-error="#failTxtMunicipio">
+                                <p id="failTxtMunicipio"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                            <label for="txtUbicacion" class="form-label">Ubicación</label>
+                            <!-- <input class="form-control border px-2" id="txtUbicacion" name="txtUbicacion" type="text" data-error="#failUbicacion"> -->
+                            <textarea id="txtUbicacion" class="form-control border px-2" name="txtUbicacion" data-error="#failUbicacion" rows="2"></textarea>
+                            <p id="failUbicacion"></p>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                            <label for="txtPlaca">Placa</label>
+                            <input type="text" id="txtPlaca" class="form-control border px-2" name="txtPlaca" data-error="#failPlaca">
+                            <p id="failPlaca"></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                            <label for="txtFechaInicio" class="form-label">Fecha Inicio</label>
+                            <input class="form-control border px-2" id="txtFechaInicio" name="txtFechaInicio" type="datetime-local" data-error="#failFechaInicio">
+                            <p id="failFechaInicio"></p>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                            <label for="txtFechaFin" class="form-label">Fecha Fin</label>
+                            <input class="form-control border px-2" id="txtFechaFin" name="txtFechaFin" type="datetime-local" data-error="#failFechaFin">
+                            <p id="failFechaFin"></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                            <label for="txtCosto">Costo</label>
+                            <input type="text" id="txtCosto" class="form-control border px-2" name="txtCosto" data-error="#failCosto">
+                            <p id="failCosto"></p>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                            <label for="txtObservaciones" class="form-label">Observaciones</label>
+                            <textarea id="txtObservaciones" class="form-control border px-2" name="txtObservaciones" data-error="#failObservaciones" rows="2"></textarea>
+                            <p id="failObservaciones"></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                            <label for="txtCosto">Imágen 1</label>
+                            <input class="form-control imgVehiculo border px-2" type="file" id="txtImagen" name="txtImagen" data-error="#failImagen" accept="image/*">
+                            <p id="failImagen"></p>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                            <label for="txtCosto">Imágen 2</label>
+                            <input class="form-control imgVehiculo border px-2" type="file" id="txtImagen" name="txtImagen" data-error="#failImagen" accept="image/*">
+                            <p id="failImagen"></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                            <label for="txtCosto">Imágen 3</label>
+                            <input class="form-control imgVehiculo border px-2" type="file" id="txtImagen" name="txtImagen" data-error="#failImagen" accept="image/*">
+                            <p id="failImagen"></p>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                            <label for="txtCosto">Imágen 4</label>
+                            <input class="form-control imgVehiculo border px-2" type="file" id="txtImagen" name="txtImagen" data-error="#failImagen" accept="image/*">
+                            <p id="failImagen"></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                            <label for="txtCosto">Imágen 5</label>
+                            <input class="form-control imgVehiculo border px-2" type="file" id="txtImagen" name="txtImagen" data-error="#failImagen" accept="image/*">
+                            <p id="failImagen"></p>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                            <button id="btnBorrarFiles" type="button" class="btn btn-outline-danger mt-4">Borrar</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <button id="btnGuardarOperadorManiobra" class="btn btn-success">Editar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="seccionHistorial" class="col-xl-6 col-lg-6 col-md-6 col-sm-6 border border-2 rounded mt-2">
+                <h5 class="pt-3">Historial del día</h5>
+                <div id="containerHistorial" class="row"></div>
+            </div>
+        </div>
+    </div>
+</div>

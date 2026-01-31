@@ -1,0 +1,20 @@
+# Excluir node_modules si usas npm/yarn
+node_modules/
+
+# Excluir dependencias de Composer si usas PHP
+vendor/
+
+# Excluir archivos de entorno local
+.env
+
+# Excluir archivos de caché y logs
+*.log
+*.cache
+
+# Excluir archivos generados por el sistema
+.DS_Store
+Thumbs.db
+
+# Excluir archivos de configuración de IDE
+.vscode/
+.idea/
